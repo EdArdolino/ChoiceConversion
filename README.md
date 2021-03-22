@@ -12,3 +12,8 @@ How to use:
 6. Next, you will be asked to enter arguments (they will differ depending on which choice you select)
 7. After you enter your arguments, the string/binary conversion will be printed out
 8. Finally, you will recieve a message that the conversion has been printed to a file in the same directory as ChoiceConversion.py
+
+
+Note for Linux users:
+
+1. Make sure to add this line '#!/usr/bin/env python3' into the program itself (this is the user path for your python install, may vary depengin on your system and install paths)
