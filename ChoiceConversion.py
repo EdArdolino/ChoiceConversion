@@ -13,6 +13,7 @@
 
 # When the program is run, a string is printed asking the user to select the operation they would like to perform.
 # Error checking is performed to make sure the user enters option given by the print statement
+print("\n")
 print("Choose which you would like to do?\n 1.) Convert a string from binary\n 2.) Convert a string to binary")
 response = input("Please enter 1 or 2: ")
 while response not in {"1", "2"}:
@@ -30,11 +31,6 @@ def string_write_to_log(string):
 
     with open("String Conversion(s).txt", "a") as file:
         file.writelines(str(string))
-
-# Function to write input and conversion to Excel, will be used later on
-#def string_write_to_log(string):
-    #with pd.ExcelWriter(r'C:\Users\ardolinoe\Documents\Python\ChoiceConversion\StringConversions.xlsx') as writer:
-        #return
 
         
 
