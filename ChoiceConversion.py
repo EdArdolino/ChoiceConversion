@@ -12,7 +12,7 @@
 ##
 
 # When the program is run, a string is printed asking the user to select the operation they would like to perform.
-# Error checking is performed to make sure the user enters option given by the print statemnt
+# Error checking is performed to make sure the user enters option given by the print statement
 print("Choose which you would like to do?\n 1.) Convert a string from binary\n 2.) Convert a string to binary")
 response = input("Please enter 1 or 2: ")
 while response not in {"1", "2"}:
@@ -31,7 +31,7 @@ def string_write_to_log(string):
     with open("String Conversion(s).txt", "a") as file:
         file.writelines(str(string))
 
-
+# Function to write input and conversion to Excel, will be used later on
 #def string_write_to_log(string):
     #with pd.ExcelWriter(r'C:\Users\ardolinoe\Documents\Python\ChoiceConversion\StringConversions.xlsx') as writer:
         #return
@@ -49,7 +49,7 @@ if response == ("1"):
     print("The binary conversion is: " + str(converted))
 
     # To be used later when full conversion is working
-    # binary_write_to_log(converted)
+    #binary_write_to_log(converted)
 
 
 # If statement to take a string input
@@ -61,3 +61,19 @@ if response == ("2"):
     print("The converted string is: " + str(converted))
     print("The converted string has been written to a log file.")
     string_write_to_log(string_input + " -> " + converted + "\n")
+
+# Ask user if they would like to run the program again
+# Automatically converts all answers to lowercase for accessibility
+more_conversions = input("Would you like to run ChoiceConversion.py again? (y/n): ").lower()
+
+while more_conversions not in {"y", "n"}:
+    more_conversions = input("Incorrect input, please enter y or n: ")
+
+# If statement that exists program if user says no
+if more_conversions == ("n"):
+    print("Thank you")
+    exit(0)
+
+# If statement to run program again if user enters yes (laying framework)
+if more_conversions == ("y"):
+    print("Work in progress.")
