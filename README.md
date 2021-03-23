@@ -1,6 +1,8 @@
 # Choice Conversion
 
-This python program lets you choose between convertings a 
+About: This is a simple python program that converts a users input. It has been broken into two programs: ChoiceFunctions.py and ChoiceConversion.py. ChoiceFunctions.py is where all of the functions for each conversion is stored. ChoiceConversion.py is the program that executes the conversions based on the user input.
+
+Functionality: Convert a string from binary, and Convert a string to binary
 
 How to use:
 
