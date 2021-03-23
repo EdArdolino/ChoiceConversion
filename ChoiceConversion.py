@@ -29,5 +29,4 @@ if response == ("2"):
 
 # Ask user if they would like to run the program again
 # Automatically converts all answers to lowercase for accessibility
-
 ChoiceFunctions.run_again()

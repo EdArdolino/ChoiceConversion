@@ -1,8 +1,9 @@
 # Choice Conversion
+{: .alert .alert-info .text-center}
 
 About: This is a simple python program that converts a users input. It has been broken into two programs: ChoiceFunctions.py and ChoiceConversion.py. ChoiceFunctions.py is where all of the functions for each conversion is stored. ChoiceConversion.py is the program that executes the conversions based on the user input.
 
-Functionality: Convert a string from binary, and Convert a string to binary
+Functionality: Convert a string from binary, and Convert a string to binary.
 
 How to use:
 
@@ -18,4 +19,4 @@ How to use:
 
 Note for Linux users:
 
-1. Make sure to add this line '#!/usr/bin/env python3' into the program itself (this is the user path for your python install, may vary depengin on your system and install paths)
+1. Make sure to add this line '#!/usr/bin/env python3' into the program itself (this is the user path for your python install, may vary depending on your system and install paths)
