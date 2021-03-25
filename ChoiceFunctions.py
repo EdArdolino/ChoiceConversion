@@ -10,6 +10,25 @@
 #
 ##
 
+def start():
+    print("\n")
+    print("Choose which you would like to do:\n 1.) Convert a string from binary\n 2.) Convert a string to binary")
+    response = input("Please enter 1 or 2: ")
+    while response not in {"1", "2"}:
+        response = input("Incorrect input, please enter 1 or 2: ")
+
+# If statement to take binary input
+    if response == ("1"):
+        string_from_binary()
+
+# If statement to take a string input
+    if response == ("2"):
+        string_to_binary()
+
+# Ask user if they would like to run the program again
+# Automatically converts all answers to lowercase for accessibility
+    run_again()
+
 # Function created to write the conversion to a file named 'Binary Conversion(s)'
 def binary_write_to_log(string):
 
@@ -43,14 +62,15 @@ def string_to_binary():
     print("The converted string has been written to a log file.")
     string_write_to_log(string_input + " -> " + converted + "\n")
 
+# Input to run program again
 def run_again():
-
     more_conversions = input("Would you like to run ChoiceConversion.py again? (y/n): ").lower()
     while more_conversions not in {"y", "n"}:
         more_conversions = input("Incorrect input, please enter y or n: ")
 
+    # If the user enters yes, the program will run again, if not, the program will stop
     if more_conversions == ("y"):
-        print("Work in progress.")
-        exit(0)
+        start()
     elif("n"):
         print("Thank you.")
+        exit(0)
