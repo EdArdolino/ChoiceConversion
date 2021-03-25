@@ -14,5 +14,3 @@ import ChoiceFunctions
 if __name__ == "__main__":
     ChoiceFunctions.start()
 
-# When the program is run, a string is printed asking the user to select the operation they would like to perform.
-# Error checking is performed to make sure the user enters option given by the print statement
