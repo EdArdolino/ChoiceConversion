@@ -1,4 +1,4 @@
-# Choice Conversion\
+# Choice Conversion
 
 About: This is a simple python program that converts a users input. It has been broken into two programs: ChoiceFunctions.py and ChoiceConversion.py. ChoiceFunctions.py is where all of the functions for each conversion is stored. ChoiceConversion.py is the program that executes the conversions based on the user input.
 
@@ -17,7 +17,7 @@ How to use:
 
 Note:
 
-In order to convert from binary to a string you need to use the format:
+In order to convert from binary to a string you need to use the format:  
 'XXXXXXXX XXXXXXXX XXXXXXXX XXXXXXXX XXXXXXXX'
 
 Note for Linux users:
