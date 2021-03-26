@@ -1,6 +1,6 @@
 ##
 # @Author: Ed Ardolino
-# @Version 1.0
+# @Version 3.0
 # @Creation Date: 3-22-2021
 ##
 
@@ -11,22 +11,21 @@
 ##
 
 def start():
-    print("\n")
-    print("Choose which you would like to do:\n 1.) Convert a string from binary\n 2.) Convert a string to binary")
+    print("\nChoose which you would like to do:\n 1.) Convert binary to a string\n 2.) Convert a string to binary\n")
     response = input("Please enter 1 or 2: ")
     while response not in {"1", "2"}:
         response = input("Incorrect input, please enter 1 or 2: ")
 
-# If statement to take binary input
+    # If statement to take binary input
     if response == ("1"):
-        string_from_binary()
+        binary_to_string()
 
-# If statement to take a string input
+    # If statement to take a string input
     if response == ("2"):
         string_to_binary()
 
-# Ask user if they would like to run the program again
-# Automatically converts all answers to lowercase for accessibility
+    # Ask user if they would like to run the program again
+    # Automatically converts all answers to lowercase for accessibility
     run_again()
 
 # Function created to write the conversion to a file named 'Binary Conversion(s)'
@@ -42,29 +41,29 @@ def string_write_to_log(string):
         file.writelines(str(string))
 
 # Input is converted and written to a file        
-def string_from_binary():
-    print("Currently in development")
-    exit(0)
+def binary_to_string():
 
-    print("You selected: '1.) Convert a string from binary'")
+    print("You selected: '1.) Convert binary to a string'\n")
     binary_input = input("Binary: ")
+    # Conversion that takes the binary input and converts it into a string
+    converted = "".join([chr(int(binary, 2)) for binary in binary_input.split(" ")])
     print("The binary conversion is: " + str(converted))
-
-    # To be used later when full conversion is working
-    #binary_write_to_log(converted)
+    print("The converted string has been written to a log file.")
+    binary_write_to_log(binary_input + " -> " + converted + "\n")
 
 # Input is converted and written to a file
 def string_to_binary():
-    print("You selected: '2.) Convert a string to binary'")
+    print("You selected: '2.) Convert a string to binary'\n")
     string_input = input("String: ")
-    converted = ''.join(format(ord(i), '08b') for i in string_input)
-    print("The converted string is: " + str(converted))
+    # Conversion that takes the string input and converts it into binary
+    converted = ' '.join(format(ord(i), '08b') for i in string_input)
+    print("\nThe converted string is: " + str(converted))
     print("The converted string has been written to a log file.")
     string_write_to_log(string_input + " -> " + converted + "\n")
 
-# Input to run program again
+# Input to  ask about running the program again
 def run_again():
-    more_conversions = input("Would you like to run ChoiceConversion.py again? (y/n): ").lower()
+    more_conversions = input("\nWould you like to run ChoiceConversion.py again? (y/n): ").lower()
     while more_conversions not in {"y", "n"}:
         more_conversions = input("Incorrect input, please enter y or n: ")
 
@@ -72,5 +71,5 @@ def run_again():
     if more_conversions == ("y"):
         start()
     elif("n"):
-        print("Thank you.")
+        print("\nThank you.\n")
         exit(0)

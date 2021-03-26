@@ -2,7 +2,7 @@
 
 About: This is a simple python program that converts a users input. It has been broken into two programs: ChoiceFunctions.py and ChoiceConversion.py. ChoiceFunctions.py is where all of the functions for each conversion is stored. ChoiceConversion.py is the program that executes the conversions based on the user input.
 
-Functionality: Convert a string from binary, and Convert a string to binary.
+Functionality: Convert binary to a string, and Convert a string to binary.
 
 How to use:
 
@@ -15,6 +15,10 @@ How to use:
 7. After you enter your arguments, the string/binary conversion will be printed out
 8. Finally, you will recieve a message that the conversion has been printed to a file in the same directory as ChoiceConversion.py
 
+Note:
+
+In order to convert from binary to a string you need to use the format:
+'XXXXXXXX XXXXXXXX XXXXXXXX XXXXXXXX XXXXXXXX'
 
 Note for Linux users:
 
