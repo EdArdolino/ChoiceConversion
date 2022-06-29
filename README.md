@@ -8,8 +8,8 @@ How to use:
 
 1. Navigate to where you downloaded ChoiceConversion.py
 2. Open a Windows Powershell or Windows Command Prompt in the download location of ChoiceConversion.py
-3. Enter 'python ChoiceConversion.py' in the command line
-4. Example: 'C:\Users\Admin\Documents\Python\Choice Conversion' python ChoiceConversion.py
+3. Enter `python ChoiceConversion.py` in the command line
+4. Example: `'C:\Users\Admin\Documents\Python\Choice Conversion' python ChoiceConversion.py`
 5. You will be prompted to select an operaiton by entering 1 or 2
 6. Next, you will be asked to enter arguments (they will differ depending on which choice you select)
 7. After you enter your arguments, the string/binary conversion will be printed out
@@ -22,4 +22,4 @@ In order to convert from binary to a string you need to use the format:
 
 Note for Linux users:
 
-1. Make sure to add this line '#!/usr/bin/env python3' into the program itself (this is the user path for your python install, may vary depending on your system and install paths)
+1. Make sure to add this line `#!/usr/bin/env python3` into the program itself (this is the user path for your python install, may vary depending on your system and install paths)
